@@ -74,6 +74,14 @@ footer {
     letter-spacing: 2px;
     margin:0;
 }
+
+.section-title p{
+    font-size: 25px;
+    color: #000000;
+    font-weight: 400;
+    letter-spacing: 2px;
+    margin:15px;
+}
 /* Header styles */
 .header {
     position: absolute;
@@ -217,7 +225,7 @@ footer {
 
 /*couple-section*/
 .couple-section{
-    padding: 80px 0 80px;
+    padding: 80px 0 0;
 }
 .couple-section .couple{
     flex:0 0 50%;
@@ -257,7 +265,7 @@ footer {
     margin: 15px 0;
     font-family: "Great Vibes", cursive;
     font-weight: normal;
-    letter-spacing: 2px;;
+    letter-spacing: 2px;
 }
 .couple-section .couple p{
     font-size:16px;
@@ -286,7 +294,84 @@ footer {
 }
 .couple-section .social-links a:hover i{
     color: #f3f2f1;
+}
 
+/* story section */
+.story-section {
+    padding: 80px 0;
+}
 
+.story-section .story-content {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.story-section .story-content::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    width: 1px;
+    height: 100%;
+    top: 0;
+    background-color: #cccccc;
+}
+
+.story-section .story-item {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.story-section .story-item:last-child {
+    margin-bottom: 0;
+}
+
+.story-section .story-item:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.story-section .story-item i {
+    position: absolute;
+    left: 50%;
+    width: 31px;
+    margin-left: -15px;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    padding: 5px;
+    background-color: #f3f2f1;
+    font-size: 18px;
+}
+
+.story-section .story-text,
+.story-section .story-img {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 0 20px; /* Add padding to create space */
+}
+
+.story-section .story-text h3 {
+    font-size: 24px;
+    margin: 0 0 8px;
+    color: #000000;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.story-section .story-text p {
+    font-size: 16px;
+    line-height: 26px;
+    margin: 0;
+    color: #555555;
+}
+
+.story-section .story-img img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
 }
 /* You can add more styles here for other sections and elements */
