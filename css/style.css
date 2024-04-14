@@ -374,4 +374,72 @@ footer {
     height: auto;
     border-radius: 5px;
 }
+
+/* Google Maps section styles */
+.map-section .section-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.map-section .section-title h2 {
+    font-size: 40px;
+    color: #000;
+    font-weight: 700;
+    font-family: "Great Vibes", cursive;
+    letter-spacing: 2px;
+    margin: 0;
+    margin-top: -30px;
+}
+
+.map-section .section-title p {
+    font-size: 18px;
+    color: #555;
+    margin-top: 10px;
+    letter-spacing: 2px;
+}
+
+.map-section .map-content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.map-section .map-content img {
+    display: block;
+    margin: 0 auto 20px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.map-section .map-content .btn {
+    display: inline-block;
+    background-color: #ff3366;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    margin-top: -30px;
+    margin-bottom: 2px; /* Adjust margin-bottom to match margin-top for consistency */
+    margin-left: 490px;
+}
+
+/* Footer styles */
+.footer-section {
+    background-color: #333; /* Change to your desired background color */
+    color: #fff; /* Change to your desired text color */
+    padding: 10px 0px; /* Adjust padding as needed */
+}
+
+.footer-section p {
+    font-size: 14px;
+    text-align: center; /* Center-align the paragraph text */
+    margin: 0;
+}
 /* You can add more styles here for other sections and elements */
