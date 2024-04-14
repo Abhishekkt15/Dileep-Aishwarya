@@ -443,3 +443,37 @@ footer {
     margin: 0;
 }
 /* You can add more styles here for other sections and elements */
+
+/* Media Queries for responsiveness */
+
+@media (max-width: 768px) {
+    .header .logo a {
+        font-size: 24px;
+    }
+
+    .header .nav ul li {
+        margin-left: 15px;
+    }
+
+    .home-section .home-content h1 {
+        font-size: 48px;
+    }
+
+    /* Add more styles for responsiveness as needed */
+}
+
+@media (max-width: 576px) {
+    .header .logo a {
+        font-size: 20px;
+    }
+
+    .header .nav ul li {
+        margin-left: 10px;
+    }
+
+    .home-section .home-content h1 {
+        font-size: 36px;
+    }
+
+    /* Add more styles for responsiveness as needed */
+}
