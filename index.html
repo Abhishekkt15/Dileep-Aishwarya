@@ -7,6 +7,8 @@
     <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
     <!-- main  css-->
     <link rel="stylesheet" type="text/css" href="css/style.css">
+     <!-- responsive  css-->
+     <link rel="stylesheet" type="text/css" href="css/responsive.css">
     <!-- default skin -->
     <link rel="stylesheet" type="text/css" href="css/skins/pink.css">
 </head>
@@ -17,21 +19,21 @@
                 <div class="logo">
                     <a href="index.html">D & A</a>
                 </div>
+                <div class="hamburger-btn">
+                    <span></span>
+                </div>
                 <div class="nav">
                     <ul>
-                        <li><a href="#" class="active">Home</a></li>
-                        <li><a href="#">Couple</a></li>
-                        <li><a href="#">Story</a></li>
-                        <li><a href="#">Events</a></li>
-                        <li><a href="#">People</a></li>
-                        <li><a href="#">Gallery</a></li>
-                        <li><a href="#">RSVP</a></li>
+                        <li><a href="#" data-scroll-nav="0" class="active">Home</a></li>
+                        <li><a data-scroll-nav="1" href="#">Couple</a></li>
+                        <li><a data-scroll-nav="2" href="#">Events</a></li>
+                        <li><a data-scroll-nav="3" href="#">Location</a></li>
                     </ul>
                 </div>
             </div>
         </div>
     </header>
-    <section class="home-section">
+    <section class="home-section" data-scroll-index="0">
         <!-- slide start-->
         <div class="slide active" style="background-image: url('img/slides/slide-1.jpg');">
             <div class="container">
@@ -76,7 +78,7 @@
 
     <!-- couple section start -->
 
-    <section class="couple-section">
+    <section class="couple-section" data-scroll-index="1">
         <div class="container">
             <div class="row">
                 <div class="section-title">
@@ -124,7 +126,7 @@
     <!-- couple section end -->
 
     <!-- Story/event section start-->
-    <section class="story-section">
+    <section class="story-section" data-scroll-index="2">
         <div class="container">
             <div class="row">
                 <div class="section-title">
@@ -175,9 +177,7 @@
                                 <h3> RECEPTION </h3>
                                 <span class="date"> 27 Feb 2024</span>
                                 <span class="time"> 6:30 Pm Onwards </span>
-                                <p> It's one of the oldest traditional Indian pre wedding ceremony where the bride and groom attend 
-                                    the event together and a professional mehndi artist applies mehndi to the bride's hands and feet. 
-                                    This will be having a celebratory festival feel to it with people wearing vibrant clothes and dancing, singing, playing games and a lot more.</p>
+                                <p> The reception is like the big finale of the wedding celebrations. It's where the newly married couple gets to feel all the love and good vibes from their family and friends as they start their married life. Think of it as a big party where everyone comes together to have a great time, share stories, dance, and just enjoy being together. It's a special moment for the couple to make memories that they'll cherish forever.</p>
                             </div>
                             <div class="story-img">
                                 <img src="img/story/story-3.JPG" alt="couple love story">
@@ -208,7 +208,7 @@
     <!-- Story/event section ends-->
 
     <!-- Google Maps section start -->
-    <section class="map-section">
+    <section class="map-section" data-scroll-index="3">
         <div class="container">
             <div class="row">
                 <div class="section-title">
@@ -231,30 +231,54 @@
     <!-- Google Maps section end -->
 
     <!-- Footer section start -->
-    <footer class="footer-section">
+    <!-- <footer class="footer">
         <div class="container">
             <div class="row">
-                <div class="col-md-12">
-                    <p>Crafted by Abhishek K T</p>
-                    <div class="social-links">
-                        <a href="#" title="Linkedin">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                        <a href="https://wa.me/qr/DSR73KRLDAH4E1" title="whatsapp">
-                            <i class="fab fa-whatsapp"></i>
-                        </a>                                                                                                    
-                        <a href="https://www.instagram.com/_ktm_psychotic?utm_source=qr&igsh=MTltZ3E0Mms4emR6Yg==" title="instagram">
-                            <i class="fab fa-instagram"></i>
-                        </a>
+                <div class="footer-content">
+                    <div class="couple-name">
+                        <img src ="img/flower-circle.png" alt="wedding couple">
+                        <h2>Soshiv
+                            <span> & </span>
+                            Shivani
+                        </h2>
                     </div>
+                    <p>Thank You</p>
                 </div>
             </div>
         </div>
-    </footer>
+    </footer> -->
+
     <!-- Footer section end -->
 
+    <!-- copyright start-->
+    <!-- <p class="copyright-text"> copyright &copy; 2020 The website </p>
+    <a class= "cd" href="#" title="Linkedin">
+        <i class="fab fa-linkedin"></i>
+    </a> -->
+
+    <div class="copyright-section">
+        <p class="copyright-text">
+            Crafted by Abhishek K T
+        </p>
+        <div class="social-links">
+            <a class="cd" href="https://www.linkedin.com/in/abhishek-k-t-6862b3169?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" title="Linkedin">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a class="cd" href="https://www.instagram.com/abhishek_gowda15?igsh=MWJnOHUyNGUzOHNibQ==" title="instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a class="cd" href="https://wa.me/qr/EBLKZQTRJMY5E1" title="whatsapp">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+            <!-- Add more social links here if needed -->
+        </div>
+    </div>
+    <!-- copyright end-->
+    
 <!-- jquery-->
 <script src="js/jquery.min.js"></script>
+<!-- scrollit -->
+<script src="js/scrollIt.min.js"></script>
 <!-- main-->
 <script src="js/main.js"></script>
     </body>
